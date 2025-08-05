@@ -40,8 +40,7 @@ notbuzz:
 notlf:
 	cmp r12d,0xf
 	jne mainLoop
-	mov eax,0x3c
-	syscall
+ 	hlt
 put:
 	mov rax,0x1
 	syscall
